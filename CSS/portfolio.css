@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@600&display=swap');*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+}
+
+.principal {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/Img/desenv\ port.png);
+    background-color: #191919;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.portfolio {
+    color: white;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.portfolio span {
+    color: rgb(82, 82, 243);
+    font-weight: 300;
+}
+
+li {
+    color: white;
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: rgb(82, 82, 243);
+    transition: 0.3s;
+}
+
+.informacoes {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+h1 span {
+    color: rgb(82, 82, 243);
+}
+
+.informacoes h3 {
+    color: white;
+    font-size: 18px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 60px 15px;
+    background-color: rgb(72, 71, 71);
+}
+
+section img {
+    width: 600px;
+    height: 600px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+section div h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+section div h2 span {
+    color: rgb(82, 82, 243);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+section div p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.4rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    white-space: pre-line;
+    /* Adiciona quebra de linha */
+}
+
+section div button {
+    color: white;
+    background: rgb(82, 82, 243);
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 26px;
+    border: none;
+    margin-right: 0;
+}
+
+section div button:hover {
+    background: black;
+    transition: 0.5s;
+}
+
+.projetos {
+    background-color: #191919;
+}
+
+.projetos h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.cards-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: black;
+    height: 365px;
+    width: 335px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona espaço entre as linhas */
+}
+
+.card img {
+    height: 100px;
+    margin-top: 0px;
+}
+
+.card h5 {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card p {
+    color: gray;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: white;
+    background: rgb(82, 82, 243);
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 26px;
+    border: none;
+    font-size: 15px;
+}
+
+.card a:hover {
+    background: rgb(22, 1, 70);
+    transition: 0.5s;
+}
