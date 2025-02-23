@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.nav {
+    width: 300px;
+    background-color: #121212;
+    padding: 10px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo i {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.book i,
+.book p {
+    color: #b7b3b6;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.book p{
+    transition: color 0.4s;
+}
+
+.book p:hover{
+    color: white;
+}
+
+.playlist h5,
+.podcast h5 {
+    color: #b7b3b6;
+    font-weight: lighter;
+}
+
+.playlist,
+.podcast {
+    margin-top: 10px;
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.playlist button,
+.podcast button {
+    background-color: white;
+    color: black;
+    padding: 6px 10px;
+    margin-top: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.playlist button:hover,
+.podcast button:hover{
+    background-color: #b5b0b0;
+}
+
+
+.playlist p,
+.podcast p {
+    font-size: 15px;
+}
+
+.footer {
+    margin-top: 160px;
+}
+
+.footer a {
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.idioma {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 12px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+main {
+    padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.pesquisa-musica {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.pesquisa-musica input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    margin-left: 7px;
+    outline: none;
+}
+
+.grid-artistas,
+.grid-albuns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+
+}
+
+.artist-card,
+.album-card {
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;*/
+}
+
+.artist-card:hover,
+.album-card:hover {
+    background-color: #282828;
+}
+
+.artist-card img,
+.album-card img {
+    width: 100%;
+    max-width: 70%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.artist-card h3,
+.album-card h3 {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.artist-card p,
+.album-card p {
+    font-size: 10px;
+    color: #b7b3b6;
+}
+
+.conteudo {
+    margin-top: 40px;
+}
+
+.conteudo h2 {
+    margin-bottom: 10px;
+}
+
+.banner {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, #AF2896, #509BF5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px;
+}
+
+.banner h2{
+    font-size: 14px;
+}
+
+
+.banner p {
+    font-size: 10px;
+}
+
+.banner button{
+    border-radius: 20px;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner button:hover{
+    background-color: #746a6a;
+}
