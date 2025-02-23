@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", serif;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 600px;
+    gap: 10%;
+    z-index: 2;
+}
+
+header img {
+    width: 250px;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+section {
+    background-image: radial-gradient(#4d61c7, #0e049e);
+    height: 100vh;
+    position: relative;
+}
+
+section .list {
+    width: 70vw;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+section .list .item {
+    position: absolute;
+    inset: 0;
+}
+
+section .list .item .carro-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+}
+
+section .list .item img {
+    width: 100%;
+    transform: rotate(-20deg);
+}
+
+section .list .item .conteudo {
+    position: absolute;
+    right: 100px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+}
+
+section .list .item .conteudo .unico-dono {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section .list .item .conteudo h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-family: "League Gothic", serif;
+}
+
+section .list .item .conteudo .descricao {
+    color: #d9d9d9;
+    text-align: right;
+    max-width: 400px;
+    font-size: 15px;
+}
+
+section .list .item .conteudo .compre {
+    border-radius: 30px;
+    height: 35px;
+    width: 120px;
+    text-transform: uppercase;
+    background-color: #02032f;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: "League Gothic", serif;
+}
+
+section .list .item .conteudo .compre:hover {
+    opacity: 0.9;
+}
+
+section .list::before {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    top: 50%;
+    border-top: 1px solid white;
+}
+
+section .setas {
+    width: 70vw;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    display: flex;
+    justify-content: space-between;
+}
+
+section .setas button:nth-child(1) img {
+    transform: scale(-1);
+}
+
+section .setas button {
+    top: 60%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+section .setas button img {
+    width: 30px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+section .setas button:hover {
+    background-color: #02032f;
+}
+
+section .indicators {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 15px;
+}
+
+section .slide-number {
+    font-size: 5em;
+    font-family: "League Gothic", serif;
+}
+
+section ul {
+    display: flex;
+    gap: 10px;
+}
+
+section ul li {
+    width: 50px;
+    height: 5px;
+    background-color: #02032f;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+section ul li.ativo {
+    background-color: white;
+}
+
+section .list {
+    --calculo: 1;
+}
+
+section .list .item {
+    transform: translateX(calc(100vw * var(--calculo)));
+    transition: 0.5s;
+    opacity: 0;
+}
+
+section .list .item .carro-img img {
+    transform: rotate(0);
+    transition: 0.5s;
+    transition-delay: 0.3s;
+}
+
+section .list .item .conteudo .unico-dono,
+section .list .item .conteudo h2,
+section .list .item .conteudo .descricao,
+section .list .item .conteudo .compre {
+    transform: translateX(calc(200px * var(--calculo)));
+    transition: 0.7s;
+    transition-delay: 0.3s;
+    opacity: 0;
+}
+
+section .list .item .conteudo h2 {
+    transition-delay: 0.5s;
+}
+
+section .list .item .conteudo .descricao {
+    transition-delay: 0.7s;
+}
+
+section .list .item .conteudo .compre {
+    transition-delay: 0.9s;
+}
+
+section .list .item.active {
+    transform: translateX(0);
+    transition: 0.5s;
+    opacity: 1;
+}
+
+section .list .item.active .carro-img img {
+    transform: rotate(-20deg);
+}
+
+section .list .item.active .conteudo .unico-dono,
+section .list .item.active .conteudo h2,
+section .list .item.active .conteudo .descricao,
+section .list .item.active .conteudo .compre {
+    transform: translateX(0);
+    opacity: 1;
+}
