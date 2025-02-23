@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/proj-cafe/cafeteria.css">
+    <title>Cafeteria</title>
+</head>
+<body>
+    <div class="video-fundo">
+        <video src="/videos/coffe (1).mp4" loop muted autoplay></video>
+        <div class="sombra"></div>
+    </div>
+    <header>
+        <section>
+            <a href="#">
+                <img src="/Img/logo-cafe.png" alt="logo-cafe">
+            </a>
+            <nav>
+                <a href="#inicio"> Home</a>
+                <a href="#sobre"> Sobre</a>
+                <a href="#endereco" onclick="mostrarModal()"> Endereço</a>
+            </nav>
+        </section>
+    </header>
+    <section id="inicio" class="textos">
+        <div>
+            <h3> Venha conhecer o melhor café da região</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequatur maxime accusantium
+                odio. Quia sit totam laboriosam enim atque nam fuga, facilis, ipsam voluptates, quo a dolorem iusto
+                quidem sequi.</p>
+            <a class="pedido-cafe"> Peça o seu agora</a>
+        </div>
+    </section>
+    <section id="sobre"  class="sobre-nos">
+        <h2 class="text-especial"> <span>Sobre</span> nós</h2>
+        <div class="container">
+            <div class="img">
+                <img src="/Img/cafe caido.jpeg" alt="cafe-caido">
+            </div>
+            <div class="script">
+                <h3> O que faz nosso café especial </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate accusamus deleniti maxime aperiam
+                    eum harum qui ipsam nobis. Eligendi, rem? Sequi consectetur distinctio perferendis facere quia
+                    necessitatibus quidem soluta ad?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum adipisci? Non fuga
+                    facilis praesentium minima et debitis, repellendus, quaerat placeat ipsam alias corporis iure atque
+                    magni iste doloremque exercitationem.</p>
+                <a class="pedido-cafe"> Saiba mais </a>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <h3 class="text-especial"> <span> Nosso </span> endereço</h3>
+        <iframe id="endereço"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29634.596661521442!2d-49.630032085575806!3d-21.80638647282683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be467589002709%3A0x54c03e662abc324e!2sCafel%C3%A2ndia%2C%20SP%2C%2016500-000!5e0!3m2!1spt-BR!2sbr!4v1738283891142!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="mascara" onclick="esconderModal()"></div>
+    <script src="/proj-cafe/cafeteria.js"></script>
+</body>
+</html>
